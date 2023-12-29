@@ -1,12 +1,14 @@
 package calc;
 
 public class Evaluator {
-	String operand = "";
+	public Evaluator() { }
 	
 	String[] possibleOperations = new String[] {"add", "sub", "mul", "div"};
 	
-	public Evaluator(String operand) { 
-		this.operand = operand.trim().toLowerCase();
+	
+	String operand = "";
+	public void SetOperand(String operand) {
+		this.operand = operand;
 	}
 	
 	public double Evaluate(double num1, double num2) {

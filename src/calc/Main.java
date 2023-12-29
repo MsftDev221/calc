@@ -14,9 +14,10 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("What operation do you want to evaluate?");
-		String operation = scanner.nextLine();
 		
-		Evaluator eval = new Evaluator(operation);
+		Evaluator eval = new Evaluator();
+		
+		eval.SetOperand(scanner.nextLine());
 		
 		System.out.println("What's the first operand?");		
 		double number1 = Double.parseDouble(scanner.nextLine());
